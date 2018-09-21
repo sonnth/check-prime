@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nguyên Tố</title>
+</head>
+<body>
+<script>
+    let number = Number(prompt("Enter number: "));
+    function checkPrime() {
+        let isPrime = 0;
+        for (let i = 2; i < (number / 2); i++) {
+            isPrime = 1;
+            if (number % i === 0) {
+                isPrime = 0;
+                break;
+            }
+        }
+        return isPrime;
+    }
+    (checkPrime() === 1)? alert(number + " is Prime"):alert( number +" is not Prime");
+</script>
+
+</body>
+</html>
